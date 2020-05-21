@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Buffone's Garlic - Products</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="public/style.css" type="text/css">
+    </head>
+    <body>
+        <!--Navbar Reference: https://getbootstrap.com/docs/4.3/components/navbar/-->
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ede6d8;">
+          <a class="navbar-brand" href="https://laolmstead.github.io/BuffonesGarlic/">
+              <!--Logo Source: https://www.freelogodesign.org-->
+              <img src="images/logo.png" width="100" height="100" alt="">
+          </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="https://laolmstead.github.io/BuffonesGarlic/">Home</a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="https://laolmstead.github.io/BuffonesGarlic/about">About</a>
+              </li>
+              <li class="nav-item active mx-5">
+                <a class="nav-link" href="https://laolmstead.github.io/BuffonesGarlic/products">Products<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item mx-5">
+                <a class="nav-link" href="https://laolmstead.github.io/BuffonesGarlic/recipes">Recipes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <br>
+                    <img class="banner" src="images/logo.png" width="350" height="350" alt="">
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        
+        <br><br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8 border border-dark rounded" style="background: rgba(237, 230, 216, 0.7);">
+              <h2 class="text productHeader">Products</h2>
+              <ul class="productList">
+                <!--Reference: https://stackoverflow.com/questions/3559467/description-box-using-onmouseover-->
+                <div id="HNGparent">
+                  <li class="listItems">Hardneck Garlic<br><div id="HNGpopup" class="popup" style="display: none">Hardneck garlic is stronger in flavor and usually contains 5 to 10 cloves per bulb.
+                  </div></li>
+                </div>
+                <div id="SNGparent">
+                  <li class="listItems">Softneck Garlic<br><div id="SNGpopup" class="popup" style="display: none">Softneck garlic is softer in flavor and usually contains 6 to 18 cloves per bulb.
+                  </div></li>
+                </div>
+                <div id="SCPparent">
+                  <li class="listItems">Scapes<br><div id="SCPpopup" class="popup" style="display: none">
+                  Scapes grow on the tops of Hardneck Garlic and can ground up to make flavorful dips and sauces.
+                  </div></li>
+                </div>
+                <div id="GPparent">
+                  <li class="listItems">Garlic Powder<br><div id="GPpopup" class="popup" style="display: none">Dried and pulverized garlic. This is a combination of Softneck and Hardneck Garlics.
+                  </div></li>
+                </div>
+              </ul>
+            </div>
+            <div class="col-2"></div>
+          </div>
+        </div>
+
+        <br>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10 border border-dark rounded" style="background: rgba(237, 230, 216, 0.7);">
+              <h2 class="text productHeader">Request Purchase Here</h2><br>
+              <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="get">
+                <fieldset class="subButton">
+                  <label class="text prod" for="firstname">First Name: </label>
+                  <input class="inp" type="text" name="firstname" size="20" maxlength="30"><br><br>
+                  <label class="text prod" for="lastname">Last Name: </label>
+                  <input class="inp" type="text" name="lastname" size="20" maxlength="30"><br><br>
+                  <label class="text prod" for="phone">Phone Number: </label>
+                  <input class="inp" type="text" name="phone" size="20" maxlength="30"><br><br>
+                  <label class="text prod" for="hardneck">Hardneck Garlic: </label>
+                  <input class="inp" type="number" name="hardneck" min="0" max="100"size="5"><br><br>
+                  <label class="text prod" for="softneck">Softneck Garlic: </label>
+                  <input class="inp" type="number" name="softneck" min="0" max="100"size="5"><br><br>
+                  <label class="text prod" for="scapes">Garlic Scapes: </label>
+                  <input class="inp" type="number" name="scapes" min="0" max="100"size="5"><br><br>
+                  <label class="text prod" for="powder">Garlic Powder: </label>
+                  <input class="inp" type="number" name="powder" min="0" max="100"size="5"><br><br>
+                  <input class="text" type="submit" value="Submit" />
+                </fieldset>
+              </form>
+            </div>
+            <div class="col-1"></div>
+          </div>
+        </div>        
+
+        <br><br><br><br><br>
+
+        <table class="footer">
+            <tr>
+                <td id="fb"><a href="https://www.facebook.com">Facebook</a></td>
+                <td id="twitter" ><a href="https://twitter.com">Twitter</a></td>
+                <td id="insta"><a href="https://www.instagram.com">Instagram</a></td>
+                <td class="contact"><strong>Contact Information:</strong><br><div class="shrink">1234 Farm Road<br>Farmington, Ohio 54321<br>Phone (123) 867-5309</div></td>
+            </tr>
+        </table>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="public/products.js"></script>
+    </body>
+</html>
