@@ -1,0 +1,108 @@
+body {
+    /*Reference: https://css-tricks.com/perfect-full-page-background-image/*/
+    /*Background Image Reference: Photo by LoboStudio Hamburg on Unsplash*/
+    background: url(garlicBanner.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text {
+    font-family: "Apple Chancery";
+    text-align: center;
+}
+
+.banner {
+    background: rgba(237, 230, 216, 0.7);
+    text-align: center;
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.head {
+    text-align: center;
+    background-color: rgba(237, 230, 216, 0.7);
+    border-radius: 8px;
+    border: 2px solid;
+}
+
+.textBackground {
+    display: inline;
+    background: rgba(237, 230, 216, 0.7);
+    border-radius: 8px;
+    padding: .2rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: arial;
+    text-align: center;
+}
+
+.shrink {
+    font-size: 8pt;
+}
+
+table {
+    width: 100%;
+}
+
+p {
+    font-size: 13pt;
+}
+
+.scrollList {
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.listItems {
+    padding-bottom: 20px;
+    font-family: "Apple Chancery";
+}
+
+.productHeader {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.subButton {
+    padding-bottom: 20px;
+}
+
+.inp {
+    float: right;
+}
+
+.prod {
+    float: left;
+    padding-right: 50px;
+}
+
+.popup {
+    display: inline;
+    background: white;
+    border: 1px solid;
+    border-radius: 8px;
+    font-family: "Apple Chancery";
+}
+
+#fb {
+    background-color: rgba(237, 230, 216);
+}
+
+#twitter {
+    background-color: rgba(237, 230, 216);
+}
+
+#insta {
+    background-color: rgba(237, 230, 216);
+}
+
+.contact {
+    background-color: rgba(237, 230, 216);
+}
